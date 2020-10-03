@@ -7,7 +7,7 @@
 		<script type="text/paperscript" canvas="myCanvas">
 			/*var keyData={
 				a: {
-					color:"purple",
+					color:"blue",
 					sound: new Howl({
 						src: ['sounds/bubbles.mp3']
 					  })
@@ -37,19 +37,19 @@
 					sound: new Howl({
 					  src: ['sounds/clay.mp3']
 					}),
-					color: '#2ecc71'
+					color: '#07f26b'
 				},
 				e: {
 					sound: new Howl({
 					  src: ['sounds/confetti.mp3']
 					}),
-					color: '#3498db'
+					color: '#055285'
 				},
 				r: {
 					sound: new Howl({
 					  src: ['sounds/corona.mp3']
 					}),
-					color: '#9b59b6'
+					color: '#7b4691'
 				},
 					t: {
 					sound: new Howl({
@@ -61,7 +61,7 @@
 					sound: new Howl({
 					  src: ['sounds/flash-1.mp3']
 					}),
-					color: '#16a085'
+					color: '#08997d'
 				},
 				u: {
 					sound: new Howl({
@@ -181,7 +181,7 @@
 					sound: new Howl({
 					  src: ['sounds/moon.mp3']
 					}),
-					color: '#2c3e50'
+					color: '#034587'
 				}
 			}
 			
@@ -194,7 +194,7 @@
 				if(keyData[event.key]){
 					var maxPoint=new Point(view.size.width,view.size.height);
 				var point=maxPoint*Point.random();
-				// When a key is pressed, set the content of the text item:
+				// When a key is pressed, we have to set the content of the text item:
 				var newCircle=new Path.Circle(point,500);
 				
 				newCircle.fillColor=keyData[event.key].color;
